@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="403.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.controller.CreditController">
+   <children>
+      <Label layoutX="25.0" layoutY="43.0" text="Сумма кредита">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="80.0" text="Срок кредита">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="117.0" text="Ставка">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="260.0" text="Ежемесячный платеж">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="298.0" text="Переплата по кредиту">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="334.0" text="Общая выплата">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="149.0" text="Тип платежей">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sumField" layoutX="237.0" layoutY="44.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="termField" layoutX="237.0" layoutY="81.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="rateField" layoutX="237.0" layoutY="118.0" prefHeight="25.0" prefWidth="86.0" />
+      <Label layoutX="505.0" layoutY="43.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="259.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="298.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="334.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthlyPaymentLabel" layoutX="246.0" layoutY="260.0" prefHeight="27.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="overpaymentLabel" layoutX="246.0" layoutY="298.0" prefHeight="27.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fullSumLabel" layoutX="246.0" layoutY="334.0" prefHeight="27.0" prefWidth="287.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="80.0" text="месяцев">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="117.0" text="\%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="paymentTypeComboBox" layoutX="237.0" layoutY="150.0" prefHeight="25.0" prefWidth="260.0" />
+      <Button fx:id="calculateButton" layoutX="25.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleCalculateButton" prefHeight="55.0" prefWidth="553.0" text="Рассчитать">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="27.0" layoutY="368.0" prefHeight="27.0" prefWidth="537.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

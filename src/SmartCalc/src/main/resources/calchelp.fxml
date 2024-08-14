@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="451.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="232.0" layoutY="42.0" text="Справка по калькулятору">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="91.0" prefHeight="62.0" prefWidth="690.0" text="Калькулятор позволяет проводить арифметические операции с различными операторами (сложение, вычитание, умножение, деление, остаток от деления, возведение в степень) и функциями (см. далее)." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="153.0" prefHeight="44.0" prefWidth="690.0" text="На вход программы могут подаваться как целые числа, так и вещественные числа, записанные через точку." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="198.0" prefHeight="23.0" prefWidth="669.0" text="Представляется возможность вводить выражение напрямую с клавиатуры." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="223.0" prefHeight="44.0" prefWidth="681.0" text="Производится вычисление произвольных скобочных арифметических выражений в инфиксной нотации." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="266.0" prefHeight="44.0" prefWidth="681.0" text="Вычисление производятся после полного ввода вычисляемого выражения и нажатия на символ `=`." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="303.0" prefHeight="23.0" prefWidth="669.0" text="Предоставляется лимит выражения в 256 символов." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="38.0" layoutY="325.0" prefHeight="23.0" prefWidth="108.0" text="Функции:" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="58.0" layoutY="348.0" prefHeight="23.0" prefWidth="156.0" text="cos(x), sin(x), tan(x)" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="58.0" layoutY="378.0" prefHeight="23.0" prefWidth="183.0" text="acos(x), asin(x), atan(x)" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="407.0" prefHeight="20.0" prefWidth="156.0" text="sqrt(x), ln(x), log(x)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

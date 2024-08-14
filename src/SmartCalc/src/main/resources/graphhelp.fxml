@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="322.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="202.0" layoutY="42.0" text="Справка по графу">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="99.0" prefHeight="20.0" prefWidth="288.0" text="Доступен следующий функционал:" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="73.0" layoutY="127.0" prefHeight="44.0" prefWidth="483.0" text="Построение графика функции, заданной с помощью выражения в инфиксной нотации с переменной x." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="73.0" layoutY="175.0" prefHeight="44.0" prefWidth="483.0" text="Построение графика, заданного с помощью выражения в инфиксной нотации без переменной (будет прямая)" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="73.0" layoutY="221.0" prefHeight="44.0" prefWidth="483.0" text="Задание области определения и области значения функции в диапазонах от -1000000 до 1000000" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

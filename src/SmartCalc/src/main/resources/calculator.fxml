@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<AnchorPane prefHeight="400.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">-->
+
+<AnchorPane prefHeight="442.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.controller.CalculatorController">
+   <children>
+      <Button fx:id="sinButton" layoutX="14.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleSinButton" prefHeight="25.0" prefWidth="52.0" text="sin" />
+      <Button fx:id="cosButton" layoutX="14.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleCosButton" prefHeight="25.0" prefWidth="52.0" text="cos" />
+      <Button fx:id="tanButton" layoutX="14.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleTanButton" prefHeight="25.0" prefWidth="52.0" text="tan" />
+      <Button fx:id="lnButton" layoutX="14.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleLnButton" prefWidth="52.0" text="ln" />
+      <Button fx:id="sqrtButton" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleSqrtButton" prefWidth="52.0" text="sqrt" />
+      <Button layoutX="14.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleXButton" prefWidth="52.0" text="x" fx:id="xButton" />
+      <Button fx:id="asinButton" layoutX="81.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleAsinButton" prefHeight="25.0" prefWidth="52.0" text="asin" />
+      <Button fx:id="acosButton" layoutX="81.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleAcosButton" prefWidth="52.0" text="acos" />
+      <Button fx:id="atanButton" layoutX="81.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleAtanButton" prefWidth="52.0" text="atan" />
+      <Button fx:id="logButton" layoutX="81.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleLogButton" prefWidth="52.0" text="log" />
+      <Button fx:id="powerButton" layoutX="81.0" layoutY="362.0" mnemonicParsing="false" onAction="#handlePowerButton" prefWidth="52.0" text="^" />
+      <Button fx:id="modButton" layoutX="149.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleModButton" prefWidth="52.0" text="mod" />
+      <Button fx:id="sevenButton" layoutX="149.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleSevenButton" prefWidth="52.0" text="7" />
+      <Button fx:id="fourButton" layoutX="149.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleFourButton" prefWidth="52.0" text="4" />
+      <Button fx:id="oneButton" layoutX="149.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleOneButton" prefWidth="52.0" text="1" />
+      <Button fx:id="zeroButton" layoutX="149.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleZeroButton" prefWidth="52.0" text="0" />
+      <Button fx:id="leftBracketButton" layoutX="215.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleLeftBracketButton" prefWidth="52.0" text="(" />
+      <Button fx:id="eightButton" layoutX="215.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleEightButton" prefWidth="52.0" text="8" />
+      <Button fx:id="fiveButton" layoutX="215.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleFiveButton" prefWidth="52.0" text="5" />
+      <Button fx:id="twoButton" layoutX="215.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleTwoButton" prefWidth="52.0" text="2" />
+      <Button fx:id="dotButton" layoutX="215.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleDotButton" prefWidth="52.0" text="." />
+      <Button fx:id="rightBracketButton" layoutX="278.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleRightBracketButton" prefWidth="52.0" text=")" />
+      <Button fx:id="nineButton" layoutX="278.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleNineButton" prefWidth="52.0" text="9" />
+      <Button fx:id="sixButton" layoutX="278.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleSixButton" prefWidth="52.0" text="6" />
+      <Button fx:id="threeButton" layoutX="278.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleThreeButton" prefWidth="52.0" text="3" />
+      <Button fx:id="equalButton" layoutX="278.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleEqualButton" prefWidth="52.0" text="=" />
+      <Button fx:id="mulButton" layoutX="341.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleMulButton" prefWidth="52.0" text="*" />
+      <Button fx:id="divButton" layoutX="341.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleDivButton" prefWidth="52.0" text="/" />
+      <Button fx:id="minusButton" layoutX="341.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleMinusButton" prefWidth="52.0" text="-" />
+      <Button fx:id="plusButton" layoutX="341.0" layoutY="362.0" mnemonicParsing="false" onAction="#handlePlusButton" prefWidth="52.0" text="+" />
+      <Button fx:id="delButton" layoutX="342.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleDelButton" prefWidth="52.0" text="del" />
+      <Button fx:id="clearInputButton" layoutX="405.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleClearInputButton" prefHeight="154.0" prefWidth="64.0" text="AC" />
+      <Button fx:id="setXButton" layoutX="405.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleSetXButton" prefWidth="64.0" text="set x" />
+      <Label layoutX="341.0" layoutY="178.0" prefHeight="35.0" prefWidth="128.0" text="x = 0" fx:id="xIsField">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="14.0" text="Журнал">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="clearJournalButton" layoutX="480.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleClearJournalButton" prefHeight="25.0" prefWidth="250.0" text="Очистить" />
+      <Label fx:id="outputField" layoutX="19.0" layoutY="169.0" prefHeight="44.0" prefWidth="313.0" />
+      <Label layoutX="81.0" layoutY="399.0" text="=">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="setXField" layoutX="107.0" layoutY="396.0" prefHeight="25.0" prefWidth="287.0" />
+      <Button fx:id="graphButton" layoutX="18.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleGraphButton" prefWidth="70.0" text="График" />
+      <Button fx:id="creditButton" layoutX="88.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleCreditButton" prefWidth="70.0" text="Кредит" />
+      <Button fx:id="helpButton" layoutX="158.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleHelpButton" prefWidth="80.0" text="Справка" />
+      <TextArea fx:id="inputField" layoutX="17.0" layoutY="41.0" prefHeight="113.0" prefWidth="452.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextArea>
+      <TextArea fx:id="journalTextArea" editable="false" layoutX="479.0" layoutY="41.0" prefHeight="341.0" prefWidth="250.0" text="Журнала еще нет." wrapText="true" />
+   </children>
+</AnchorPane>

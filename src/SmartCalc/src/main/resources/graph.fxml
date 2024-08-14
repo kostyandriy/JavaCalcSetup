@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.controller.GraphController">
+   <children>
+      <Label layoutX="8.0" layoutY="320.0" prefWidth="48.0" text="f(x)=">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="382.0" text="max X =">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="382.0" text="min X =">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="graphButton" layoutX="486.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleGraphButton" prefHeight="27.0" prefWidth="98.0" text="Построить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearGraphButton" layoutX="486.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleClearGraphButton" prefHeight="27.0" prefWidth="98.0" text="Очистить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="functionField" layoutX="56.0" layoutY="314.0" prefHeight="25.0" prefWidth="530.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="minXField" layoutX="122.0" layoutY="381.0" prefHeight="25.0" prefWidth="116.0" text="-10">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="maxXField" layoutX="348.0" layoutY="381.0" prefHeight="25.0" prefWidth="116.0" text="10">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label fx:id="errorField" layoutX="38.0" layoutY="433.0" prefHeight="39.0" prefWidth="530.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="graphArea" layoutX="-3.0" prefHeight="310.0" prefWidth="600.0">
+        <xAxis>
+          <NumberAxis lowerBound="-10.0" upperBound="10.0" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" lowerBound="-10.0" upperBound="10.0" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
